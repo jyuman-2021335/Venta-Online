@@ -36,7 +36,12 @@ router.put('/editar/:id', [
 ], actualizarCategoria);
 
 // Borrar una categoria - privado - se requiere id y un token valido
-router.delete('/eliminar/:id', borrarCategoria);
+router.delete('/eliminar/:id', [
+    validarJWT,
+    check('id', 'No es un id de mongo valido').isMongoId(),
+    check('id').custom( existeCategoriaPorId ),
+    validarCampos
+], borrarCategoria);
 
 
 module.exports = router;

@@ -31,6 +31,7 @@ const obtenerCategoriaPorId = async(req = request, res = response) => {
 const crearCategoria = async (req = request, res = response) => {
 
     const nombre = req.body.nombre.toUpperCase();
+    const descripcion = req.body.descripcion.toUpperCase();
 
     //Validación para encontrar una categoria por nombre en la DB
     const categoriaDB = await Categoria.findOne({ nombre });
@@ -43,6 +44,7 @@ const crearCategoria = async (req = request, res = response) => {
     //Generar la data(información a almacenar en la base de datos) a guardar
     const data = {
         nombre,
+        descripcion,
         usuario: req.usuario._id
     }
 
@@ -63,6 +65,7 @@ const actualizarCategoria = async(req = request, res = response) => {
     const {_id, estado, usuario, ...data} = req.body; // el ... es el operador de express
 
     data.nombre = data.nombre.toUpperCase();     //Cambiamos todo a mayúsculas
+    data.descripcion = req.body.descripcion.toUpperCase();
     data.usuario = req.usuario._id; //Hacemos referencia al  usuario que hizo el put por medio del token
 
     //Edición de categoría

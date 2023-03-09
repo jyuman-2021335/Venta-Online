@@ -35,13 +35,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2NzgyNTU3MzQsImV4cCI6MTY3ODI3MDEzNH0.Qybb8NVHT-BNfWnp_132xLu8uFcnuthvOODTxkayiQk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2NzgzOTgzNzUsImV4cCI6MTY3ODQxMjc3NX0.9zHxOr29Sf8y7C0CAhCU8-PjSd4AdyUsdQo6QK5Gqw4",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Higiene\",\r\n    \"descripcion\": \"Articulos sobre Higiene\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Cpcina\",\r\n    \"descripcion\": \"Articulos sobre Cocina\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -70,7 +70,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2NzgyNTU3MzQsImV4cCI6MTY3ODI3MDEzNH0.Qybb8NVHT-BNfWnp_132xLu8uFcnuthvOODTxkayiQk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2NzgzOTgzNzUsImV4cCI6MTY3ODQxMjc3NX0.9zHxOr29Sf8y7C0CAhCU8-PjSd4AdyUsdQo6QK5Gqw4",
 								"type": "default"
 							}
 						],
@@ -84,7 +84,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/categorias/editar/640826ed23f93986b131961d",
+							"raw": "localhost:8080/api/categorias/editar/640a5401848892d7f26363b2",
 							"host": [
 								"localhost"
 							],
@@ -93,7 +93,7 @@
 								"api",
 								"categorias",
 								"editar",
-								"640826ed23f93986b131961d"
+								"640a5401848892d7f26363b2"
 							]
 						}
 					},
@@ -123,7 +123,14 @@
 					"name": "DELETE Categoria",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
 						"url": {
 							"raw": "localhost:8080/api/categorias/eliminar/640826927a5079b3a82a19e4",
 							"host": [
