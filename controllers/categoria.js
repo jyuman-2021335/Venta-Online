@@ -1,6 +1,7 @@
 //Importacion
 const { response, request } = require('express');
 const Categoria = require('../models/categoria');
+const Producto = require('../models/producto');
 
 const obtenerCategorias = async(req = request, res = response) => {
     //Condición, me busca solo las categorias que tengan estado en true
@@ -77,13 +78,36 @@ const actualizarCategoria = async(req = request, res = response) => {
     });
 }
 
-const borrarCategoria = async(req = request, res = response) => {
+const borrarCategoria = async (req = request, res = response) => {
 
     const { id } = req.params;
-    const categoriaBorrada = await Categoria.findByIdAndUpdate(id, { estado: false }, { new: true });
+
+    const query = { categoria: id };
+    const productos = await Producto.find(query);
+    const productoId = productos.map((product) => product._id);
+    const idA = req.usuario.id;
+
+    const colleccion = "Categoria";
+    const categoriaDB = await Categoria.findOne({ nombre: colleccion });
+
+    if (!categoriaDB) {
+        const deleteCategoria = new Categoria({
+            nombre: "Categoria",
+            usuario: idA,
+        });
+
+        await deleteCategoria.save();
+    }
+
+    const querys = { nombre: "Categoria" };
+    const { _id } = await Categoria.findOne(querys);
+
+    const editado = await Producto.updateMany({ categoria: id }, { categoria: _id });
+
+    const categoriaBorrada = await Categoria.findByIdAndDelete(id);
 
     res.json({
-        msg: 'Borrar Categoria',
+        msg: 'DELETE Categoria',
         categoriaBorrada
     });
 }

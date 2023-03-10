@@ -7,8 +7,7 @@ const CategoriaSchema = Schema({
         unique: true
     },
     descripcion: {
-        type: String,
-        required: [true, 'La categoría es obligatoria']
+        type: String
     },
     estado: {
         type: Boolean,
