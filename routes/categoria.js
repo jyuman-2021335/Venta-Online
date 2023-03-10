@@ -1,7 +1,6 @@
 //Importaciones
 const { Router } = require('express');
 const { check } = require('express-validator');
-const { login } = require('../controllers/auth');
 const { obtenerCategorias, obtenerCategoriaPorId, crearCategoria, actualizarCategoria, borrarCategoria } = require('../controllers/categoria');
 const { existeCategoriaPorId } = require('../helpers/db-validators');
 const { validarCampos } = require('../middlewares/validar-campos');

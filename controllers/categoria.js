@@ -12,7 +12,7 @@ const obtenerCategorias = async(req = request, res = response) => {
     ]);
 
     res.json({
-        msg: 'GET API de usuarios',
+        msg: 'GET API de Categorias',
         listaCategorias
     });
 }
@@ -23,7 +23,7 @@ const obtenerCategoriaPorId = async(req = request, res = response) => {
     const categoria = await Categoria.findById(id).populate('usuario', 'nombre');
 
     res.json({
-        msg: 'Categoria por Id',
+        msg: 'Categoria por ID',
         categoria
     });
 }
@@ -56,7 +56,7 @@ const crearCategoria = async (req = request, res = response) => {
     res.status(201).json({
         msg: 'Post de Categoria',
         categoriaAgregada
-    })
+    });
 }
 
 const actualizarCategoria = async(req = request, res = response) => {
@@ -84,7 +84,7 @@ const borrarCategoria = async(req = request, res = response) => {
 
     res.json({
         msg: 'Borrar Categoria',
-        id
+        categoriaBorrada
     });
 }
 

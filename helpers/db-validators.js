@@ -1,6 +1,7 @@
 //Importaciones
 const Usuario = require('../models/usuario');
 const Categoria = require('../models/categoria');
+const Producto = require('../models/producto');
 const Role = require('../models/role');
 
 //Validamos en contro de la db si ese correp ya existe
@@ -46,9 +47,20 @@ const existeCategoriaPorId = async(id) => {
 
 }
 
+const existeProductoPorId = async( id ) => {
+
+    //Verificar si existe el ID
+    const existIdOfProduct = await Producto.findById( id );
+    if ( !existIdOfProduct ) {
+        throw new Error(`El id: ${id} no existe en la DB`);
+    }
+
+}
+
 module.exports = {
     emailExiste,
     esRoleValido,
     existeUsuarioPorId,
-    existeCategoriaPorId
+    existeCategoriaPorId,
+    existeProductoPorId
 }
