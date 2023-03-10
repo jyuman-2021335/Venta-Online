@@ -21,7 +21,7 @@ router.get('/mostrar', getFacturas);
 //Crear categoria si el usuario esta logeado - privada - token valido
 router.post('/facturar', [
     validarJWT,
-    validarStock,
+    //validarStock,
     validarCampos
 ], postFactura);
 
