@@ -23,6 +23,11 @@ const UsuarioSchema = Schema({
         type: Boolean,
         default: true
     },
+    compras: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Factura',
+        required: true
+    }]
 });
 
 module.exports = model('Usuario', UsuarioSchema)

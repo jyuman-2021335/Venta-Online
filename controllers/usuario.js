@@ -61,6 +61,16 @@ const registroUsuario = async (req = request, res = response) => {
 
 }
 
+const getComprasUsuario = async (req = request, res = response) => {
+    const idUsuario = req.usuario.id;
+    const user = await Usuario.findById(idUsuario).populate('compras');
+    res.status(201).json({
+        msg: 'Compras Usuario',
+        user
+    });
+
+}
+
 const putUsuario = async (req = request, res = response) => {
 
     const { id } = req.params;
@@ -106,6 +116,7 @@ module.exports = {
     getUsuarios,
     postUsuario,
     registroUsuario,
+    getComprasUsuario,
     putUsuario,
     deleteUsuario
 }
