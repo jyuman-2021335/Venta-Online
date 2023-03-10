@@ -178,13 +178,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0NDI0MTMsImV4cCI6MTY3ODQ1NjgxM30.FWaFMSk7UB8TYzG4ZJJxLKZrcA78R1rW_nShhT9WT44",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Balón de Fútbol\",\r\n    \"precio\": 150,\r\n    \"categoria\": \"640ae4b2d1b84f68785a7c3a\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Cuchillo\",\r\n    \"precio\": 50,\r\n    \"cantidad\": 2,\r\n    \"categoria\": \"640afa218a976b661408d1d5\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -293,11 +293,201 @@
 		},
 		{
 			"name": "Usuarios",
-			"item": []
+			"item": [
+				{
+					"name": "GET Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Jefferson Yuman\",\r\n    \"correo\": \"jeff@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/usuarios/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabed@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/usuarios/editar/640821f4740e2d481e883fd7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"editar",
+								"640821f4740e2d481e883fd7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Usuarios",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/eliminar/640af5c691ec957ae23e0110",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"eliminar",
+								"640af5c691ec957ae23e0110"
+							],
+							"query": [
+								{
+									"key": "x-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
-			"name": "Usuarios",
-			"item": []
+			"name": "Facturas",
+			"item": [
+				{
+					"name": "GET Facturas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/facturas/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"facturas",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Facturas por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/facturas/640b191e176ae9efa224c129",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"facturas",
+								"640b191e176ae9efa224c129"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Factura",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0NDExMzIsImV4cCI6MTY3ODQ1NTUzMn0.U8eVjuiFCxzWVP-cMzUi3dL25xqYrjW31xLjlkFTNWU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"VOFC1\",\r\n    \"cliente\": \"640821f4740e2d481e883fd7\",\r\n    \"productos\": [\"640b186eb6c3946bb7e9eaef\", \"640b187eb6c3946bb7e9eaf3\", \"640b188cb6c3946bb7e9eaf7\"],\r\n    \"cantidadProductos\": [10, 5, 1]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/facturas/facturar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"facturas",
+								"facturar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Registro Usuarios",
@@ -335,7 +525,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"correo\": \"priss@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"correo\": \"jeff@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
