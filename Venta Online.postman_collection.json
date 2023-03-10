@@ -464,7 +464,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/facturas/640b191e176ae9efa224c129",
+							"raw": "localhost:8080/api/facturas/640b9c2a9dbb630101d1ccca",
 							"host": [
 								"localhost"
 							],
@@ -472,7 +472,7 @@
 							"path": [
 								"api",
 								"facturas",
-								"640b191e176ae9efa224c129"
+								"640b9c2a9dbb630101d1ccca"
 							]
 						}
 					},
@@ -485,13 +485,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0ODI0NTQsImV4cCI6MTY3ODQ5Njg1NH0.UjqHcgzo0xy63P70t8jk_6uFc86q8X9XTHZIAgAmiQY",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"codigo\": \"VOFC1\",\r\n    \"cliente\": \"640821f4740e2d481e883fd7\",\r\n    \"productos\": [\"640b186eb6c3946bb7e9eaef\", \"640b187eb6c3946bb7e9eaf3\"],\r\n    \"cantidadProductos\": [5, 2],\r\n    \"carrito\": \"640b8766703200f1cffe58c8\"\r\n}",
+							"raw": "{\r\n    \"codigo\": \"VOFC1\",\r\n    \"cliente\": \"640821f4740e2d481e883fd7\",\r\n    \"carrito\": \"640b8766703200f1cffe58c8\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -611,7 +611,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"correo\": \"jocabed@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"correo\": \"jeff@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

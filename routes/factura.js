@@ -4,13 +4,10 @@ const { postFactura, getFacturas, getFacturaPorID } = require('../controllers/fa
 const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
 //const { esAdminRole } = require('../middlewares/validar-roles');
-const { validarStock } = require('../middlewares/validar-stock');
 
 const router = Router();
 
-//Manejo de rutas
 
-//Obtener todas las categorias - publico
 router.get('/mostrar', getFacturas);
 
  router.get('/:id', [
@@ -18,10 +15,8 @@ router.get('/mostrar', getFacturas);
     validarCampos
 ], getFacturaPorID);
     
-//Crear categoria si el usuario esta logeado - privada - token valido
 router.post('/facturar', [
     validarJWT,
-    //validarStock,
     validarCampos
 ], postFactura);
 
