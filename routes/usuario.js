@@ -40,7 +40,6 @@ router.put('/editar/:id',[
     check('correo').custom(emailExiste),
     check('password', 'la password es obligatoria para el post').not().isEmpty(),
     check('password', 'La passward debe ser mayor a 6 letras').isLength({ min: 6 }),
-    check('rol').custom(esRoleValido),
     validarCampos
 ], putUsuario);
 
