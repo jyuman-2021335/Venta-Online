@@ -35,7 +35,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
@@ -70,7 +70,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2NzgzOTgzNzUsImV4cCI6MTY3ODQxMjc3NX0.9zHxOr29Sf8y7C0CAhCU8-PjSd4AdyUsdQo6QK5Gqw4",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
@@ -84,7 +84,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/categorias/editar/640a5401848892d7f26363b2",
+							"raw": "localhost:8080/api/categorias/editar/640bd10b6596e9bf01d72038",
 							"host": [
 								"localhost"
 							],
@@ -93,7 +93,7 @@
 								"api",
 								"categorias",
 								"editar",
-								"640a5401848892d7f26363b2"
+								"640bd10b6596e9bf01d72038"
 							]
 						}
 					},
@@ -105,7 +105,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/categorias/640826de23f93986b1319619",
+							"raw": "localhost:8080/api/categorias/640bd10b6596e9bf01d72038",
 							"host": [
 								"localhost"
 							],
@@ -113,7 +113,7 @@
 							"path": [
 								"api",
 								"categorias",
-								"640826de23f93986b1319619"
+								"640bd10b6596e9bf01d72038"
 							]
 						}
 					},
@@ -126,12 +126,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/api/categorias/eliminar/640ae4b2d1b84f68785a7c3a",
+							"raw": "localhost:8080/api/categorias/eliminar/640bd1186596e9bf01d7203c",
 							"host": [
 								"localhost"
 							],
@@ -140,7 +140,7 @@
 								"api",
 								"categorias",
 								"eliminar",
-								"640ae4b2d1b84f68785a7c3a"
+								"640bd1186596e9bf01d7203c"
 							]
 						}
 					},
@@ -152,15 +152,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/categorias/640afa218a976b661408d1d5",
+							"raw": "localhost:8080/api/buscar/categorias/Cocina",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
+								"buscar",
 								"categorias",
-								"640afa218a976b661408d1d5"
+								"Cocina"
 							]
 						}
 					},
@@ -198,13 +199,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Plato\",\r\n    \"precio\": 5,\r\n    \"cantidad\": 1,\r\n    \"categoria\": \"640afa218a976b661408d1d5\",\r\n    \"disponible\": \"false\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Shampoo\",\r\n    \"precio\": 25,\r\n    \"cantidad\": 3,\r\n    \"categoria\": \"640bd10b6596e9bf01d72038\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -233,13 +234,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Balón de Beisból\",\r\n    \"precio\": 110,\r\n    \"categoria\": \"640a5414848892d7f26363b6\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Papel de Baño\",\r\n    \"precio\": 10,\r\n    \"categoria\": \"640bd10b6596e9bf01d72038\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -247,7 +248,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/productos/editar/640ac7199dcb4b3cdeb05e94",
+							"raw": "localhost:8080/api/productos/editar/640bd4357f37b46c62d0d354",
 							"host": [
 								"localhost"
 							],
@@ -256,7 +257,7 @@
 								"api",
 								"productos",
 								"editar",
-								"640ac7199dcb4b3cdeb05e94"
+								"640bd4357f37b46c62d0d354"
 							]
 						}
 					},
@@ -269,12 +270,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/api/productos/eliminar/640ac6b19dcb4b3cdeb05e90",
+							"raw": "localhost:8080/api/productos/eliminar/640bd5257f37b46c62d0d36d",
 							"host": [
 								"localhost"
 							],
@@ -283,7 +284,7 @@
 								"api",
 								"productos",
 								"eliminar",
-								"640ac6b19dcb4b3cdeb05e90"
+								"640bd5257f37b46c62d0d36d"
 							]
 						}
 					},
@@ -316,7 +317,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
@@ -361,15 +362,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/productos/640bb517c23d8eb59209e5c9",
+							"raw": "localhost:8080/api/buscar/productos/Jabón Gel",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
+								"buscar",
 								"productos",
-								"640bb517c23d8eb59209e5c9"
+								"Jabón Gel"
 							]
 						}
 					},
@@ -433,10 +435,16 @@
 					"name": "PUT Usuarios",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabe@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabedd@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"compras\": \"640bd65dea770a2d59e2e17d\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -444,7 +452,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/usuarios/editar/640821f4740e2d481e883fd7",
+							"raw": "localhost:8080/api/usuarios/editar/640bd0d16596e9bf01d7202f",
 							"host": [
 								"localhost"
 							],
@@ -453,7 +461,7 @@
 								"api",
 								"usuarios",
 								"editar",
-								"640821f4740e2d481e883fd7"
+								"640bd0d16596e9bf01d7202f"
 							]
 						}
 					},
@@ -500,7 +508,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDBkMTY1OTZlOWJmMDFkNzIwMmYiLCJpYXQiOjE2Nzg0OTc0ODQsImV4cCI6MTY3ODUxMTg4NH0.u0KNpKvqugqko2Tzp3gQygw2emTmzdiLh487QkP0soU",
 								"type": "default"
 							}
 						],
@@ -526,13 +534,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0OTMxOTgsImV4cCI6MTY3ODUwNzU5OH0.7UuB6V9M5nULuPaKHDwvQLdz-KgOsG7j7lQMIoP5UEQ",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDA0YjY1OTZlOWJmMDFkNzIwMjMiLCJpYXQiOjE2Nzg0OTU4NDUsImV4cCI6MTY3ODUxMDI0NX0.Ebho8DBtJvwnIN_iTPXAyJ9kDI5tkMPiBtD6ZU3PLDg",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Priscila Rivas\",\r\n    \"correo\": \"priss@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabe@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -540,7 +548,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/usuarios/editarMiUsuario/640821f4740e2d481e883fd7",
+							"raw": "localhost:8080/api/usuarios/editarMiUsuario/640bd04b6596e9bf01d72023",
 							"host": [
 								"localhost"
 							],
@@ -549,7 +557,7 @@
 								"api",
 								"usuarios",
 								"editarMiUsuario",
-								"640821f4740e2d481e883fd7"
+								"640bd04b6596e9bf01d72023"
 							]
 						}
 					},
@@ -562,12 +570,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiYzY1OWU4NThkODcwZWM2ZDQ1NWMiLCJpYXQiOjE2Nzg0OTMzODksImV4cCI6MTY3ODUwNzc4OX0.JoSO7NuJEqXBufvMrYMiJQ5qn9hHcUAoqUsZ6IE3Tx0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDA0YjY1OTZlOWJmMDFkNzIwMjMiLCJpYXQiOjE2Nzg0OTU4NDUsImV4cCI6MTY3ODUxMDI0NX0.Ebho8DBtJvwnIN_iTPXAyJ9kDI5tkMPiBtD6ZU3PLDg",
 								"type": "default"
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/api/usuarios/eliminarMiUsuario/640bc659e858d870ec6d455c",
+							"raw": "localhost:8080/api/usuarios/eliminarMiUsuario/640bd04b6596e9bf01d72023",
 							"host": [
 								"localhost"
 							],
@@ -576,7 +584,7 @@
 								"api",
 								"usuarios",
 								"eliminarMiUsuario",
-								"640bc659e858d870ec6d455c"
+								"640bd04b6596e9bf01d72023"
 							]
 						}
 					},
@@ -591,7 +599,13 @@
 					"name": "GET Facturas",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"type": "default"
+							}
+						],
 						"url": {
 							"raw": "localhost:8080/api/facturas/mostrar",
 							"host": [
@@ -634,13 +648,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0ODI0NTQsImV4cCI6MTY3ODQ5Njg1NH0.UjqHcgzo0xy63P70t8jk_6uFc86q8X9XTHZIAgAmiQY",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"codigo\": \"VOFC1\",\r\n    \"cliente\": \"640821f4740e2d481e883fd7\",\r\n    \"carrito\": \"640b8766703200f1cffe58c8\"\r\n}",
+							"raw": "{\r\n    \"codigo\": \"VOFC1\",\r\n    \"cliente\": \"640bd0d16596e9bf01d7202f\",\r\n    \"carrito\": \"640bd615ea770a2d59e2e175\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -694,13 +708,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDBkMTY1OTZlOWJmMDFkNzIwMmYiLCJpYXQiOjE2Nzg0OTcyMTcsImV4cCI6MTY3ODUxMTYxN30.SdtBsPZLzcnMnUesQZIWE87Snvxd0RvLFWb0wZ6Bha8",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"carrito\": \"CC1\",\r\n    \"usuario\": \"640821f4740e2d481e883fd7\",\r\n    \"productos\": [\"640b186eb6c3946bb7e9eaef\", \"640b187eb6c3946bb7e9eaf3\"],\r\n    \"cantidadProductos\": [5, 2]\r\n}",
+							"raw": "{\r\n    \"carrito\": \"CC1\",\r\n    \"productos\": [\"640bd3a87f37b46c62d0d34c\", \"640bd4357f37b46c62d0d354\"],\r\n    \"cantidadProductos\": [1, 4]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -760,7 +774,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"correo\": \"jocabe@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"correo\": \"jeff@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
