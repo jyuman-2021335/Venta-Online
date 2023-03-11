@@ -178,13 +178,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0NDI0MTMsImV4cCI6MTY3ODQ1NjgxM30.FWaFMSk7UB8TYzG4ZJJxLKZrcA78R1rW_nShhT9WT44",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Cuchillo\",\r\n    \"precio\": 50,\r\n    \"cantidad\": 2,\r\n    \"categoria\": \"640afa218a976b661408d1d5\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Plato\",\r\n    \"precio\": 5,\r\n    \"cantidad\": 1,\r\n    \"categoria\": \"640afa218a976b661408d1d5\",\r\n    \"disponible\": \"false\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -288,6 +288,115 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "GET Productos Agotados",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/productos/agotados",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"agotados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Productos mas Vendidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/productos/masVendidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"masVendidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Mi Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0OTMxOTgsImV4cCI6MTY3ODUwNzU5OH0.7UuB6V9M5nULuPaKHDwvQLdz-KgOsG7j7lQMIoP5UEQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Priscila Rivas\",\r\n    \"correo\": \"priss@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/usuarios/editarMiUsuario/640821f4740e2d481e883fd7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"editarMiUsuario",
+								"640821f4740e2d481e883fd7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Mi Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiYzY1OWU4NThkODcwZWM2ZDQ1NWMiLCJpYXQiOjE2Nzg0OTMzODksImV4cCI6MTY3ODUwNzc4OX0.JoSO7NuJEqXBufvMrYMiJQ5qn9hHcUAoqUsZ6IE3Tx0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/eliminarMiUsuario/640bc659e858d870ec6d455c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"eliminarMiUsuario",
+								"640bc659e858d870ec6d455c"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -321,7 +430,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Jefferson Yuman\",\r\n    \"correo\": \"jeff@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"ADMIN\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Ken Yuman\",\r\n    \"correo\": \"ken@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"ADMIN\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -350,7 +459,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabed@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabe@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -414,7 +523,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NDk2MDIsImV4cCI6MTY3ODQ2NDAwMn0.NSrFHnTEjHFRFSYMk4TSzpCOg41HmUDLagLeJoMpDJE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0NzcxNDcsImV4cCI6MTY3ODQ5MTU0N30.fhBy8Vd1nW8R5XO9YyZqZUAUpXaWImbEgaTln1ZPv5o",
 								"type": "default"
 							}
 						],
@@ -611,7 +720,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"correo\": \"jeff@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"correo\": \"jocabe@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
