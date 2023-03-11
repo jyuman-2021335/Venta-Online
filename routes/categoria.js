@@ -1,7 +1,7 @@
 //Importaciones
 const { Router } = require('express');
 const { check } = require('express-validator');
-const { obtenerCategorias, obtenerCategoriaPorId, crearCategoria, actualizarCategoria, borrarCategoria } = require('../controllers/categoria');
+const { obtenerCategorias, obtenerCategoriaPorId, crearCategoria, actualizarCategoria, borrarCategoria, buscarCategoria } = require('../controllers/categoria');
 const { existeCategoriaPorId } = require('../helpers/db-validators');
 const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
@@ -41,6 +41,8 @@ router.delete('/eliminar/:id', [
     check('id').custom( existeCategoriaPorId ),
     validarCampos
 ], borrarCategoria);
+
+router.get('/:termino' ,buscarCategoria);
 
 
 module.exports = router;

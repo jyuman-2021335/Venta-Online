@@ -112,11 +112,36 @@ const borrarCategoria = async (req = request, res = response) => {
     });
 }
 
+const buscarCategoria = async( termino = '', res = response) => {
+
+    const esMongoID = ObjectId.isValid( termino );  
+
+    if ( esMongoID ) {
+        const categoria = await Categoria.findById(termino);
+        return res.json({
+            results: ( categoria ) ? [ categoria ] : [] 
+        });
+    } 
+
+    const regex = new RegExp( termino, 'i');
+
+    const categorias = await Categoria.find({
+        $or: [ { nombre: regex }],
+        $and: [ { estado: true } ]
+    });
+
+    res.json({
+        results: categorias
+    })
+
+}
+
 
 module.exports = {
     obtenerCategorias,
     obtenerCategoriaPorId,
     crearCategoria,
     actualizarCategoria,
-    borrarCategoria
+    borrarCategoria,
+    buscarCategoria
 }

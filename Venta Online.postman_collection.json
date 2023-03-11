@@ -145,6 +145,26 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "GET Buscar Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/categorias/640afa218a976b661408d1d5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categorias",
+								"640afa218a976b661408d1d5"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -336,63 +356,20 @@
 					"response": []
 				},
 				{
-					"name": "PUT Mi Usuario",
+					"name": "GET Buscar Producto",
 					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0OTMxOTgsImV4cCI6MTY3ODUwNzU5OH0.7UuB6V9M5nULuPaKHDwvQLdz-KgOsG7j7lQMIoP5UEQ",
-								"type": "default"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Priscila Rivas\",\r\n    \"correo\": \"priss@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
+						"method": "GET",
+						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/usuarios/editarMiUsuario/640821f4740e2d481e883fd7",
+							"raw": "localhost:8080/api/productos/640bb517c23d8eb59209e5c9",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
-								"usuarios",
-								"editarMiUsuario",
-								"640821f4740e2d481e883fd7"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DELETE Mi Usuario",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiYzY1OWU4NThkODcwZWM2ZDQ1NWMiLCJpYXQiOjE2Nzg0OTMzODksImV4cCI6MTY3ODUwNzc4OX0.JoSO7NuJEqXBufvMrYMiJQ5qn9hHcUAoqUsZ6IE3Tx0",
-								"type": "default"
-							}
-						],
-						"url": {
-							"raw": "localhost:8080/api/usuarios/eliminarMiUsuario/640bc659e858d870ec6d455c",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"eliminarMiUsuario",
-								"640bc659e858d870ec6d455c"
+								"productos",
+								"640bb517c23d8eb59209e5c9"
 							]
 						}
 					},
@@ -537,6 +514,69 @@
 								"api",
 								"usuarios",
 								"compras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Mi Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0OTMxOTgsImV4cCI6MTY3ODUwNzU5OH0.7UuB6V9M5nULuPaKHDwvQLdz-KgOsG7j7lQMIoP5UEQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Priscila Rivas\",\r\n    \"correo\": \"priss@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/usuarios/editarMiUsuario/640821f4740e2d481e883fd7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"editarMiUsuario",
+								"640821f4740e2d481e883fd7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Mi Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiYzY1OWU4NThkODcwZWM2ZDQ1NWMiLCJpYXQiOjE2Nzg0OTMzODksImV4cCI6MTY3ODUwNzc4OX0.JoSO7NuJEqXBufvMrYMiJQ5qn9hHcUAoqUsZ6IE3Tx0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/eliminarMiUsuario/640bc659e858d870ec6d455c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"eliminarMiUsuario",
+								"640bc659e858d870ec6d455c"
 							]
 						}
 					},

@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const { check } = require('express-validator');
-const { getProductos, getProductoPorID, postProducto, putProducto, deleteProducto, getProductosAgotados, getProductosMasvendidos } = require('../controllers/producto');
+const { getProductos, getProductoPorID, postProducto, putProducto, deleteProducto, getProductosAgotados, getProductosMasvendidos, buscarProductos } = require('../controllers/producto');
 const { existeProductoPorId } = require('../helpers/db-validators');
 const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
@@ -36,7 +36,7 @@ router.put('/editar/:id', [
     check('id').custom( existeProductoPorId ),
     check('nombre', 'El nombre es obligatorio.').not().isEmpty(),
     validarCampos
-], putProducto)
+], putProducto);
 
 router.delete('/eliminar/:id',[
     validarJWT, 
@@ -44,7 +44,8 @@ router.delete('/eliminar/:id',[
     check('id', 'No es un id valido.').isMongoId(),
     check('id').custom( existeProductoPorId ),
     validarCampos
-], deleteProducto)
+], deleteProducto);
 
+router.get('/:termino' ,buscarProductos);
 
 module.exports = router;
