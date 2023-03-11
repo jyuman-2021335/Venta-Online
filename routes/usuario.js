@@ -26,6 +26,8 @@ router.post('/registro', [
 ], registroUsuario);
 
 router.post('/agregar', [
+    validarJWT,
+    esAdminRole,
     check('nombre', 'El nombre es obligatorio para el post').not().isEmpty(),
     check('password', 'la password es obligatoria para el post').not().isEmpty(),
     check('password', 'La passward debe ser mayor a 6 letras').isLength({ min: 6 }),
@@ -38,6 +40,8 @@ router.post('/agregar', [
 
 
 router.put('/editar/:id',[
+    validarJWT,
+    esAdminRole,
     check('id', 'No es un ID valido').isMongoId(),
     check('id').custom(existeUsuarioPorId),
     check('correo', 'El correo no es valido').isEmail(),

@@ -76,7 +76,7 @@ const putUsuario = async (req = request, res = response) => {
     const { id } = req.params;
 
     //Ignoramos el _id, rol, estado  al momento de editar y mandar la petición en el req.body
-    const { _id, rol, estado, compras, ...resto } = req.body;
+    const { _id, rol, estado, ...resto } = req.body;
 
     // //Encriptar password
     const salt = bcryptjs.genSaltSync();
@@ -117,7 +117,7 @@ const editarMiUsuario = async (req = request, res = response) => {
     const idUsuario = usuario.toString();
 
     if (id === idUsuario) {
-        const { _id, rol, estado, compras, ...resto } = req.body;
+        const { _id, rol, estado,  ...resto } = req.body;
         const salt = bcryptjs.genSaltSync();
         resto.password = bcryptjs.hashSync(resto.password, salt);
         const usuarioEditado = await Usuario.findByIdAndUpdate(id, resto)

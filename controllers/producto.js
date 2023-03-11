@@ -126,29 +126,6 @@ const getProductosMasvendidos = async (req = request, res = response) => {
 
 }
 
-const buscarProductos = async( termino = '', res = response) => {
-
-    const esMongoID = ObjectId.isValid( termino );  
-
-    if ( esMongoID ) {
-        const producto = await Producto.findById(termino);
-        return res.json({
-            results: ( producto ) ? [ producto ] : [] 
-        });
-    } 
-
-    const regex = new RegExp( termino, 'i');
-
-    const productos = await Producto.find({
-        $or: [ { nombre: regex }],
-        $and: [ { estado: true } ]
-    });
-
-    res.json({
-        results: productos
-    })
-
-}
 
 module.exports = {
     getProductos,
@@ -157,6 +134,5 @@ module.exports = {
     putProducto,
     deleteProducto,
     getProductosAgotados,
-    getProductosMasvendidos,
-    buscarProductos
+    getProductosMasvendidos
 }

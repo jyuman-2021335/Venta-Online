@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const { check } = require('express-validator');
-const { getProductos, getProductoPorID, postProducto, putProducto, deleteProducto, getProductosAgotados, getProductosMasvendidos, buscarProductos } = require('../controllers/producto');
+const { getProductos, getProductoPorID, postProducto, putProducto, deleteProducto, getProductosAgotados, getProductosMasvendidos} = require('../controllers/producto');
 const { existeProductoPorId } = require('../helpers/db-validators');
 const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
@@ -13,7 +13,7 @@ router.get('/mostrar', getProductos);
 
 router.get('/agotados',[
     validarJWT,
-    //esAdminRole
+    esAdminRole
 ], getProductosAgotados);
 
 router.get('/masVendidos', getProductosMasvendidos);
@@ -26,12 +26,14 @@ router.get('/:id', [
     
 router.post('/agregar', [
     validarJWT,
+    esAdminRole,
     check('nombre', 'El nombre es obligatorio').not().isEmpty(),
     validarCampos
 ], postProducto);
 
 router.put('/editar/:id', [
     validarJWT,
+    esAdminRole,
     check('id', 'No es un id de mongo valido').isMongoId(),
     check('id').custom( existeProductoPorId ),
     check('nombre', 'El nombre es obligatorio.').not().isEmpty(),
@@ -40,12 +42,11 @@ router.put('/editar/:id', [
 
 router.delete('/eliminar/:id',[
     validarJWT, 
-    //esAdminRole,
+    esAdminRole,
     check('id', 'No es un id valido.').isMongoId(),
     check('id').custom( existeProductoPorId ),
     validarCampos
 ], deleteProducto);
 
-router.get('/:termino' ,buscarProductos);
 
 module.exports = router;
