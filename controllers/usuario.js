@@ -75,8 +75,8 @@ const putUsuario = async (req = request, res = response) => {
 
     const { id } = req.params;
 
-    //Ignoramos el _id, rol, estado y google al momento de editar y mandar la petición en el req.body
-    const { _id, rol, estado, google, ...resto } = req.body;
+    //Ignoramos el _id, rol, estado  al momento de editar y mandar la petición en el req.body
+    const { _id, rol, estado, compras, ...resto } = req.body;
 
     // //Encriptar password
     const salt = bcryptjs.genSaltSync();
@@ -111,6 +111,49 @@ const deleteUsuario = async (req = request, res = response) => {
 
 }
 
+const editarMiUsuario = async (req = request, res = response) => {
+    const {id} = req.params;
+    const usuario = req.usuario._id;
+    const idUsuario = usuario.toString();
+
+    if (id === idUsuario) {
+        const { _id, rol, estado, compras, ...resto } = req.body;
+        const salt = bcryptjs.genSaltSync();
+        resto.password = bcryptjs.hashSync(resto.password, salt);
+        const usuarioEditado = await Usuario.findByIdAndUpdate(id, resto)
+        res.json({
+            msg: 'PUT API de mi usuario',
+            usuarioEditado
+        });
+    } else{
+        res.status(401).json({
+            msg: 'Puede editar únicamente tu perfil'
+
+        });
+    }
+
+}
+
+const deleteMiUsuario = async(req = request, res = response) => {
+    const {id} = req.params;
+    const usuario = req.usuario._id;
+    const idUsuario = usuario.toString();
+
+    if(id === idUsuario){
+        const usuarioEliminado = await Usuario.findByIdAndDelete(id);
+        res.json({
+            msg: 'DELETE API de usuario',
+            usuarioEliminado
+        });
+    }else{
+        res.status(401).json({
+            msg: 'No puedes eliminar el perfil de otra cuenta'
+
+        })
+    }
+    
+}
+
 
 module.exports = {
     getUsuarios,
@@ -118,5 +161,7 @@ module.exports = {
     registroUsuario,
     getComprasUsuario,
     putUsuario,
-    deleteUsuario
+    deleteUsuario,
+    editarMiUsuario,
+    deleteMiUsuario
 }

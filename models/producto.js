@@ -6,11 +6,6 @@ const ProductoSchema = Schema({
         required: [true, 'El nombre del Producto es obligatorio'],
         unique: true
     },
-    estado: {
-        type: Boolean,
-        default: true,
-        required: true
-    },
     usuario: {
         type: Schema.Types.ObjectId,
         ref: 'Usuario',
@@ -33,6 +28,10 @@ const ProductoSchema = Schema({
     disponible: {
         type: Boolean,
         default: true
+    },
+    ventas: {
+        type: Number,
+        default: 0
     }
 });
 

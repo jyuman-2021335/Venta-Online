@@ -4,7 +4,7 @@ const Producto = require('../models/producto')
 
 const getProductos = async (req = request, res = response) => {
 
-    const query = { estado: true };
+    const query = { disponible: true };
 
     const listaProducto = await Promise.all([
         Producto.countDocuments(query),
@@ -37,7 +37,7 @@ const getProductoPorID = async (req = request, res = response) => {
 
 const postProducto = async (req = request, res = response) => {
 
-    const { estado, usuario, ...body } = req.body;
+    const { usuario, disponible, ventas, ...body } = req.body;
 
     const productoDB = await Producto.findOne({ nombre: body.nombre });
 
@@ -70,7 +70,7 @@ const postProducto = async (req = request, res = response) => {
 const putProducto = async (req = request, res = response) => {
     const { id } = req.params;
 
-    const { _id, estado, usuario, ...restoData } = req.body;
+    const { _id, usuario, ventas, ...restoData } = req.body;
 
     if (restoData.nombre) {
         restoData.nombre = restoData.nombre.toUpperCase();
@@ -89,7 +89,7 @@ const putProducto = async (req = request, res = response) => {
 const deleteProducto = async (req = request, res = response) => {
     
     const {id} = req.params;
-    const productoEliminado = await Producto.findByIdAndUpdate(id, {estado: false}, {new: true});
+    const productoEliminado = await Producto.findByIdAndUpdate(id, {disponible: false}, {new: true});
     
     res.json({
         msg: "DELETE API de Productos",
@@ -97,6 +97,33 @@ const deleteProducto = async (req = request, res = response) => {
     });
 }
 
+const getProductosAgotados = async (req = request, res = response) => {
+
+    //condiciones del get
+    const query = { disponible: false };
+
+    const listaProductosAgotados = await Promise.all([
+        Producto.countDocuments(query),
+        Producto.find(query).populate('categoria', 'nombre')
+    ]);
+
+    res.json({
+        msg: 'Productos Agotados:',
+        listaProductosAgotados
+    });
+
+}
+
+const getProductosMasvendidos = async (req = request, res = response) => {
+
+    const query = await Producto.find().sort({ventas: -1}).limit(10);
+
+    res.status(201).json({
+        msg: "Productos más Vendidos:",
+        query
+    })
+
+}
 
 
 module.exports = {
@@ -104,5 +131,7 @@ module.exports = {
     getProductoPorID,
     postProducto,
     putProducto,
-    deleteProducto
+    deleteProducto,
+    getProductosAgotados,
+    getProductosMasvendidos
 }
