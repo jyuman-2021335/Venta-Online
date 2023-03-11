@@ -35,13 +35,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDI0NjIsImV4cCI6MTY3ODUxNjg2Mn0.Iqg8H_xYZjt0Hb08TP23FpLC9NFQyEPSetl9t1DZ8b0",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Cocina\",\r\n    \"descripcion\": \"Articulos sobre Cocina\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Deportes\",\r\n    \"descripcion\": \"Articulos sobre Deportes\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -70,13 +70,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDI0NjIsImV4cCI6MTY3ODUxNjg2Mn0.Iqg8H_xYZjt0Hb08TP23FpLC9NFQyEPSetl9t1DZ8b0",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Baño\",\r\n    \"descripcion\": \"Articulos para el Baño\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Fútbol\",\r\n    \"descripcion\": \"Articulos para prácticar Fútbol\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -84,7 +84,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/categorias/editar/640bd10b6596e9bf01d72038",
+							"raw": "localhost:8080/api/categorias/editar/640bea67c410e5fa55223e6c",
 							"host": [
 								"localhost"
 							],
@@ -93,7 +93,7 @@
 								"api",
 								"categorias",
 								"editar",
-								"640bd10b6596e9bf01d72038"
+								"640bea67c410e5fa55223e6c"
 							]
 						}
 					},
@@ -126,12 +126,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDI0NjIsImV4cCI6MTY3ODUxNjg2Mn0.Iqg8H_xYZjt0Hb08TP23FpLC9NFQyEPSetl9t1DZ8b0",
 								"type": "default"
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/api/categorias/eliminar/640bd1186596e9bf01d7203c",
+							"raw": "localhost:8080/api/categorias/eliminar/640bea67c410e5fa55223e6c",
 							"host": [
 								"localhost"
 							],
@@ -140,7 +140,7 @@
 								"api",
 								"categorias",
 								"eliminar",
-								"640bd1186596e9bf01d7203c"
+								"640bea67c410e5fa55223e6c"
 							]
 						}
 					},
@@ -152,7 +152,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/buscar/categorias/Cocina",
+							"raw": "localhost:8080/api/buscar/categorias/Baño",
 							"host": [
 								"localhost"
 							],
@@ -161,7 +161,7 @@
 								"api",
 								"buscar",
 								"categorias",
-								"Cocina"
+								"Baño"
 							]
 						}
 					},
@@ -199,13 +199,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDI0NjIsImV4cCI6MTY3ODUxNjg2Mn0.Iqg8H_xYZjt0Hb08TP23FpLC9NFQyEPSetl9t1DZ8b0",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Shampoo\",\r\n    \"precio\": 25,\r\n    \"cantidad\": 3,\r\n    \"categoria\": \"640bd10b6596e9bf01d72038\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Balón\",\r\n    \"precio\": 15,\r\n    \"cantidad\": 2,\r\n    \"categoria\": \"640bea67c410e5fa55223e6c\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -234,13 +234,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDM0NTEsImV4cCI6MTY3ODUxNzg1MX0.BPDfUfpprGdfMaNenWng8cQz2NcULIDy13ml4fuhm4U",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Papel de Baño\",\r\n    \"precio\": 10,\r\n    \"categoria\": \"640bd10b6596e9bf01d72038\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Balón de Fútbol 5\",\r\n    \"precio\": 30,\r\n    \"categoria\": \"640becaac410e5fa55223ea7\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -248,7 +248,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/productos/editar/640bd4357f37b46c62d0d354",
+							"raw": "localhost:8080/api/productos/editar/640beb0ac410e5fa55223e77",
 							"host": [
 								"localhost"
 							],
@@ -257,7 +257,7 @@
 								"api",
 								"productos",
 								"editar",
-								"640bd4357f37b46c62d0d354"
+								"640beb0ac410e5fa55223e77"
 							]
 						}
 					},
@@ -270,12 +270,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDI0NjIsImV4cCI6MTY3ODUxNjg2Mn0.Iqg8H_xYZjt0Hb08TP23FpLC9NFQyEPSetl9t1DZ8b0",
 								"type": "default"
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/api/productos/eliminar/640bd5257f37b46c62d0d36d",
+							"raw": "localhost:8080/api/productos/eliminar/640beb43c410e5fa55223e7e",
 							"host": [
 								"localhost"
 							],
@@ -284,7 +284,7 @@
 								"api",
 								"productos",
 								"eliminar",
-								"640bd5257f37b46c62d0d36d"
+								"640beb43c410e5fa55223e7e"
 							]
 						}
 					},
@@ -317,7 +317,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDI0NjIsImV4cCI6MTY3ODUxNjg2Mn0.Iqg8H_xYZjt0Hb08TP23FpLC9NFQyEPSetl9t1DZ8b0",
 								"type": "default"
 							}
 						],
@@ -362,7 +362,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/buscar/productos/Jabón Gel",
+							"raw": "localhost:8080/api/buscar/productos/BALÓN DE FÚTBOL 5",
 							"host": [
 								"localhost"
 							],
@@ -371,220 +371,7 @@
 								"api",
 								"buscar",
 								"productos",
-								"Jabón Gel"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Usuarios",
-			"item": [
-				{
-					"name": "GET Usuarios",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/usuarios/mostrar",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"mostrar"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "POST Usuarios",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Ken Yuman\",\r\n    \"correo\": \"ken@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"ADMIN\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/api/usuarios/agregar",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"agregar"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PUT Usuarios",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
-								"type": "default"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabedd@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"compras\": \"640bd65dea770a2d59e2e17d\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/api/usuarios/editar/640bd0d16596e9bf01d7202f",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"editar",
-								"640bd0d16596e9bf01d7202f"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DELETE Usuarios",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
-								"type": "default"
-							}
-						],
-						"url": {
-							"raw": "localhost:8080/api/usuarios/eliminar/640af5c691ec957ae23e0110",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"eliminar",
-								"640af5c691ec957ae23e0110"
-							],
-							"query": [
-								{
-									"key": "x-token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET Compras Usuario",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDBkMTY1OTZlOWJmMDFkNzIwMmYiLCJpYXQiOjE2Nzg0OTc0ODQsImV4cCI6MTY3ODUxMTg4NH0.u0KNpKvqugqko2Tzp3gQygw2emTmzdiLh487QkP0soU",
-								"type": "default"
-							}
-						],
-						"url": {
-							"raw": "localhost:8080/api/usuarios/compras",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"compras"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PUT Mi Usuario",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDA0YjY1OTZlOWJmMDFkNzIwMjMiLCJpYXQiOjE2Nzg0OTU4NDUsImV4cCI6MTY3ODUxMDI0NX0.Ebho8DBtJvwnIN_iTPXAyJ9kDI5tkMPiBtD6ZU3PLDg",
-								"type": "default"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabe@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/api/usuarios/editarMiUsuario/640bd04b6596e9bf01d72023",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"editarMiUsuario",
-								"640bd04b6596e9bf01d72023"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DELETE Mi Usuario",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDA0YjY1OTZlOWJmMDFkNzIwMjMiLCJpYXQiOjE2Nzg0OTU4NDUsImV4cCI6MTY3ODUxMDI0NX0.Ebho8DBtJvwnIN_iTPXAyJ9kDI5tkMPiBtD6ZU3PLDg",
-								"type": "default"
-							}
-						],
-						"url": {
-							"raw": "localhost:8080/api/usuarios/eliminarMiUsuario/640bd04b6596e9bf01d72023",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"usuarios",
-								"eliminarMiUsuario",
-								"640bd04b6596e9bf01d72023"
+								"BALÓN DE FÚTBOL 5"
 							]
 						}
 					},
@@ -602,7 +389,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDMwMzYsImV4cCI6MTY3ODUxNzQzNn0.kBz6WBO6hDotbD5DbaJM8F9iApb2Wx_7Ml0DKkCRQxE",
 								"type": "default"
 							}
 						],
@@ -648,13 +435,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg0OTU5NzEsImV4cCI6MTY3ODUxMDM3MX0.hFw4fuNfaNX_Xa_lvGaIUV3PQq2X61H1jKN28fuY9II",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDMwMzYsImV4cCI6MTY3ODUxNzQzNn0.kBz6WBO6hDotbD5DbaJM8F9iApb2Wx_7Ml0DKkCRQxE",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"codigo\": \"VOFC1\",\r\n    \"cliente\": \"640bd0d16596e9bf01d7202f\",\r\n    \"carrito\": \"640bd615ea770a2d59e2e175\"\r\n}",
+							"raw": "{\r\n    \"codigo\": \"VOFC1\",\r\n    \"cliente\": \"640bea1dc410e5fa55223e67\",\r\n    \"carrito\": \"640bec58c410e5fa55223ea2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -671,6 +458,225 @@
 								"api",
 								"facturas",
 								"facturar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "GET Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Usuarios",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDMyNDUsImV4cCI6MTY3ODUxNzY0NX0.S56QPcK8NThn0J2A53JvMFodMUYzeuhqOx4TaIp77BM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Ken Yumansss\",\r\n    \"correo\": \"kensss@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"CLIENT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/usuarios/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDM0NTEsImV4cCI6MTY3ODUxNzg1MX0.BPDfUfpprGdfMaNenWng8cQz2NcULIDy13ml4fuhm4U",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Priscila Rivas\",\r\n    \"correo\": \"prissis@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"compras\": \"640becaac410e5fa55223ea7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/usuarios/editar/640bea1dc410e5fa55223e67",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"editar",
+								"640bea1dc410e5fa55223e67"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Usuarios",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhZjUwYWNmNmNhNGRiM2EwMzMxMmQiLCJpYXQiOjE2Nzg1MDMyNDUsImV4cCI6MTY3ODUxNzY0NX0.S56QPcK8NThn0J2A53JvMFodMUYzeuhqOx4TaIp77BM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/eliminar/640bed83c410e5fa55223ebd",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"eliminar",
+								"640bed83c410e5fa55223ebd"
+							],
+							"query": [
+								{
+									"key": "x-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA4MjFmNDc0MGUyZDQ4MWU4ODNmZDciLCJpYXQiOjE2Nzg0Mjc3NzUsImV4cCI6MTY3ODQ0MjE3NX0.kTi8F9KFn9VUC0cEN6zRtzfavWzjdlwxpvlfqaWmCKw",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Compras Usuario",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZWExZGM0MTBlNWZhNTUyMjNlNjciLCJpYXQiOjE2Nzg1MDM1NTQsImV4cCI6MTY3ODUxNzk1NH0.9Fxszk1AuaGSldOTmNBA87iS5kesHVyFQ3HonBlMUCw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/compras",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"compras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Mi Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZWExZGM0MTBlNWZhNTUyMjNlNjciLCJpYXQiOjE2Nzg1MDMxNDQsImV4cCI6MTY3ODUxNzU0NH0.JLmDwtPaByxpAmc5eX_lTdPQOFpln6as6mVoMV3G1Us",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Jocabed Rivas\",\r\n    \"correo\": \"jocabe@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/usuarios/editarMiUsuario/640bea1dc410e5fa55223e67",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"editarMiUsuario",
+								"640bea1dc410e5fa55223e67"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Mi Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZWExZGM0MTBlNWZhNTUyMjNlNjciLCJpYXQiOjE2Nzg1MDMxNDQsImV4cCI6MTY3ODUxNzU0NH0.JLmDwtPaByxpAmc5eX_lTdPQOFpln6as6mVoMV3G1Us",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/usuarios/eliminarMiUsuario/640af50acf6ca4db3a03312d",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios",
+								"eliminarMiUsuario",
+								"640af50acf6ca4db3a03312d"
 							]
 						}
 					},
@@ -708,13 +714,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZDBkMTY1OTZlOWJmMDFkNzIwMmYiLCJpYXQiOjE2Nzg0OTcyMTcsImV4cCI6MTY3ODUxMTYxN30.SdtBsPZLzcnMnUesQZIWE87Snvxd0RvLFWb0wZ6Bha8",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBiZWExZGM0MTBlNWZhNTUyMjNlNjciLCJpYXQiOjE2Nzg1MDI5MTMsImV4cCI6MTY3ODUxNzMxM30.j0IW-1pighMlOi5Ro2bu-4ph-FOhzs4y7mdQ_pfE_NU",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"carrito\": \"CC1\",\r\n    \"productos\": [\"640bd3a87f37b46c62d0d34c\", \"640bd4357f37b46c62d0d354\"],\r\n    \"cantidadProductos\": [1, 4]\r\n}",
+							"raw": "{\r\n    \"carrito\": \"CC1\",\r\n    \"productos\": [\"640bd4357f37b46c62d0d354\", \"640bd3d67f37b46c62d0d350\"],\r\n    \"cantidadProductos\": [4, 3]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -774,7 +780,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"correo\": \"jeff@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"correo\": \"prissis@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

@@ -31,7 +31,7 @@ const ProductoSchema = Schema({
     },
     ventas: {
         type: Number,
-        default: 0
+        default: 1
     }
 });
 
